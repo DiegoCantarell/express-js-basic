@@ -29,11 +29,10 @@ app.get('/objectInNode',(req,res) => {
 })
 
 //Query Params: Receive parameters through the url
-//http://localhost:3000/explorers/carlo
+//http://localhost:3000/explorers/diego
 //req.params = {"explorerName": "diego"}
 app.get('/explorers/:explorerName', (req,res) => {
     res.send(req.params)
 })
-//Run it in the browser using: localhost:3000/explorers/yourName
-//
+
 
