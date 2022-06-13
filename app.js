@@ -34,5 +34,6 @@ app.get('/objectInNode',(req,res) => {
 app.get('/explorers/:explorerName', (req,res) => {
     res.send(req.params)
 })
-
+//Run it in the browser using: localhost:3000/explorers/yourName
+//
 
