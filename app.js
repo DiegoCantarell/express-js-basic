@@ -14,3 +14,11 @@ app.get('/', (req,res)=> {
 app.listen(port,() =>{
     console.log(`Example app listening on port ${port} `)
 })
+
+//Answering text
+//localhost:3000/Welcome to the Main Page
+app.get('/main',(req,res) => {
+    console.log("Answering...")
+    res.send('Welcome to the Main Page')
+})
+
