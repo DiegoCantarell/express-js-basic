@@ -27,3 +27,12 @@ app.get('/objectInNode',(req,res) => {
     const object = {name: "Object1",msg: "Test1"}
     res.send(object)
 })
+
+//Query Params: Receive parameters through the url
+//http://localhost:3000/explorers/carlo
+//req.params = {"explorerName": "diego"}
+app.get('/explorers/:explorerName', (req,res) => {
+    res.send(req.params)
+})
+
+
