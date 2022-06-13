@@ -21,4 +21,9 @@ app.get('/main',(req,res) => {
     console.log("Answering...")
     res.send('Welcome to the Main Page')
 })
-
+//Return an object
+//localhost: 3000/objectInNode
+app.get('/objectInNode',(req,res) => {
+    const object = {name: "Object1",msg: "Test1"}
+    res.send(object)
+})
